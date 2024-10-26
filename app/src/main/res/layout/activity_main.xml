@@ -9,7 +9,7 @@
 
         <!-- Login Button -->
         <Button
-            android:id="@+id/button"
+            android:id="@+id/MovetoLoginPage"
             android:layout_width="102dp"
             android:layout_height="34dp"
             android:background="@android:color/transparent"
@@ -27,7 +27,7 @@
 
         <!-- Sign Up Button -->
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/button2"
+            android:id="@+id/MovetoSignUpPage"
             android:layout_width="234dp"
             android:layout_height="66dp"
             android:text="Sign Up"
