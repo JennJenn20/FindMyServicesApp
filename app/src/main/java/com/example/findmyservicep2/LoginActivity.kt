@@ -20,5 +20,16 @@ class LoginActivity : AppCompatActivity() {
                 // Start the new activity
                 startActivity(intent)
             }
+
+            val buttonMoveToServiceCat: Button = findViewById(R.id.btnmovetoservicecat)
+
+// Set up an OnClickListener for the button
+//
+            buttonMoveToServiceCat.setOnClickListener {
+                // Create an Intent to start the new activity
+                val intent = Intent(this, ServiceCatActivity::class.java)
+                // Start the new activity
+                startActivity(intent)
+            }
         }
     }

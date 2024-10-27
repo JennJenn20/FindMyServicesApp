@@ -35,6 +35,9 @@
         <activity android:name="SignUpActivity"
             android:exported="true"/>
 
+        <activity android:name=".ServiceCatActivity"
+            android:exported="true"/>
+
 
     </application>
 

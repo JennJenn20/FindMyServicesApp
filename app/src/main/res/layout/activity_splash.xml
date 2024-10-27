@@ -6,10 +6,10 @@ android:gravity="center"
 android:background="@drawable/back_ground_pic"
 android:orientation="vertical">
 
-<ImageView
-    android:layout_width="158dp"
-    android:layout_height="170dp"
-    android:src="@drawable/find_my_service_icon"
-    android:contentDescription="@string/splash_image_desc"/>
+    <ImageView
+        android:layout_width="242dp"
+        android:layout_height="227dp"
+        android:contentDescription="@string/splash_image_desc"
+        android:src="@drawable/find_my_service_icon" />
 </LinearLayout>
 

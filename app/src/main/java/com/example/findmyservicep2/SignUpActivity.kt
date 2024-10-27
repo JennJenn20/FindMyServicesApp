@@ -22,5 +22,17 @@ class SignUpActivity : AppCompatActivity() {
             // Start the new activity
             startActivity(intent)
         }
+
+        // Find the button by its ID
+        val buttonSignUpMoveToLogin: Button = findViewById(R.id.btnsignupmovetologin)
+
+// Set up an OnClickListener for the button
+//
+        buttonSignUpMoveToLogin.setOnClickListener {
+            // Create an Intent to start the new activity
+            val intent = Intent(this, LoginActivity::class.java)
+            // Start the new activity
+            startActivity(intent)
+        }
     }
 }
