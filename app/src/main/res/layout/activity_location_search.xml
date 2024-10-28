@@ -1,0 +1,66 @@
+<!-- res/layout/activity_location_search.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Overlay for Address Input -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#FFFFFF"
+        android:padding="8dp"
+        android:elevation="4dp">
+
+        <TextView
+            android:id="@+id/selectedCategoryTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Where do you need help?"
+            android:textSize="18sp"
+            android:paddingBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/unitApartmentEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/selectedCategoryTextView"
+            android:hint="Complex Name/ Apartment No."
+            android:backgroundTint="#000"
+            android:padding="8dp"/>
+
+        <EditText
+            android:id="@+id/streetAddressEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/unitApartmentEditText"
+            android:hint="Street Address"
+            android:backgroundTint="#000"
+            android:padding="8dp"/>
+
+    </RelativeLayout>
+
+    <!-- Map Fragment -->
+
+    <!-- RecyclerView for Nearby Providers -->
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/providersRecyclerView"
+        android:layout_marginBottom="4dp" />
+
+   <androidx.recyclerview.widget.RecyclerView
+       android:layout_width="match_parent"
+       android:layout_height="200dp"
+       android:id="@+id/providersRecyclerView"
+       android:layout_alignParentBottom="true"
+       android:background="#FFFFFF"
+       android:elevation="8dp"/>
+
+</RelativeLayout>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="wrap_content"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:gravity="center"
@@ -11,7 +11,7 @@
         android:id="@+id/categoryIcon"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:src="@drawable/ic_placeholder" /> <!-- Replace with an actual drawable -->
+        android:src="@drawable/ic_placeholder" />
 
     <!-- Category Name -->
     <TextView
@@ -19,10 +19,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
-        android:text="Service Name"
+        android:text="Service Category"
         android:textSize="20sp"
         android:textStyle="bold"
-        android:textColor="@color/teal_blue" />
+        android:textColor="@color/teal_blue"
+        android:gravity="center"/>
 
 </LinearLayout>
 
