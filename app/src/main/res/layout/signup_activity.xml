@@ -2,9 +2,141 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
     android:background="@drawable/back_ground_pic"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <Button
+        android:id="@+id/cameraButton"
+        android:layout_width="63dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/baseline_camera_alt_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="179dp"
+        android:layout_height="144dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/profile_icon" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupUserType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/imageView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp">
+
+        <RadioButton
+            android:id="@+id/radioServiceProvider"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Service Provider" />
+
+        <RadioButton
+            android:id="@+id/radioClient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Client" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="411dp"
+        android:layout_height="446dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.896">
+
+        <TextView
+            android:id="@+id/FullNameTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Full Names"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtFullName"
+            android:layout_width="268dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:text="e.g siloane Davis" />
+
+        <TextView
+            android:id="@+id/emailTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Email Address"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextTextEmailAddress"
+            android:layout_width="284dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:text="e.g siloane@gmail.com" />
+
+        <TextView
+            android:id="@+id/PasswordTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Password"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextTextPassword"
+            android:layout_width="268dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:text="******" />
+
+        <Button
+            android:id="@+id/btnsignupmovetologin"
+            android:layout_width="261dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_button"
+            android:text="Sign Up"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/teal_blue" />
+
+    </LinearLayout>
 
     <Button
         android:id="@+id/btnbacktogetstarted"
@@ -20,106 +152,4 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.023" />
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="179dp"
-        android:layout_height="144dp"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/profile_icon" />
-
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="match_parent"
-        android:layout_height="489dp"
-        android:background="@color/white"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.896">
-
-        <TextView
-            android:id="@+id/FullNameTextView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Full Names"
-            android:layout_marginTop="20dp"
-            android:textStyle="bold"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:textSize="25sp"/>
-
-        <EditText
-            android:id="@+id/edtFullName"
-            android:layout_width="268dp"
-            android:layout_marginTop="20dp"
-            android:layout_gravity="center"
-            android:layout_height="wrap_content"
-            android:text="e.g siloane Davis"
-            android:ems="10"
-            android:inputType="textEmailAddress"
-            app:layout_constraintBottom_toTopOf="@+id/emailTextView"/>
-
-        <TextView
-            android:id="@+id/emailTextView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="40dp"
-            android:gravity="center"
-            android:text="Email Address"
-            android:textSize="25sp"
-            android:textStyle="bold" />
-
-        <EditText
-            android:id="@+id/editTextTextEmailAddress"
-            android:layout_width="284dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="40dp"
-            android:ems="10"
-            android:inputType="textEmailAddress"
-            android:text="e.g siloane@gmail.com"
-            app:layout_constraintBottom_toTopOf="@+id/emailTextView" />
-
-        <TextView
-            android:id="@+id/PasswordTextView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Password"
-            android:layout_marginTop="20dp"
-            android:textStyle="bold"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:textSize="25sp"/>
-
-        <EditText
-            android:id="@+id/editTextTextPassword"
-            android:layout_width="268dp"
-            android:layout_marginTop="20dp"
-            android:layout_gravity="center"
-            android:layout_height="wrap_content"
-            android:text="******"
-            android:ems="10"
-            android:inputType="textEmailAddress"
-            app:layout_constraintBottom_toTopOf="@+id/emailTextView"/>
-
-        <Button
-            android:id="@+id/btnsignupmovetologin"
-            android:layout_width="261dp"
-            android:layout_height="60dp"
-            android:layout_marginTop="20dp"
-            android:layout_gravity="center"
-            android:textColor="@color/white"
-            android:background="@drawable/rounded_button"
-            app:backgroundTint="@color/teal_blue"
-            android:text="Sign Up" />
-
-
-    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

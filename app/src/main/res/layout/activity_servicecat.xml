@@ -18,6 +18,7 @@
         app:layout_constraintVertical_bias="0.024"
         app:srcCompat="@drawable/find_my_service_icon" />
 
+
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
@@ -28,11 +29,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.638"
+        app:layout_constraintHorizontal_bias="0.741"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.144" />
-
+        app:layout_constraintVertical_bias="0.046" />
 
     <EditText
         android:id="@+id/searchBar"
@@ -46,21 +46,21 @@
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.232" />
+        app:layout_constraintVertical_bias="0.18" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/categoryRecyclerView"
-        android:layout_width="364dp"
-        android:layout_height="402dp"
+        android:layout_width="376dp"
+        android:layout_height="423dp"
         android:layout_weight="1"
         android:background="@drawable/rounded_search_background"
         android:padding="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintHorizontal_bias="0.489"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.696"
+        app:layout_constraintVertical_bias="0.617"
         tools:listitem="@layout/item_service_category" />
 
     <Button
